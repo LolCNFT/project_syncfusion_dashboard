@@ -18,6 +18,7 @@ const Stacked = ({ width, height }) => {
       tooltip={{ enable: true }}
       background={currentMode === 'Dark' ? '#33373E' : '#fff'}
       legendSettings={{ background: 'white' }}
+      palettes={['#357cd2', '#e56590', '#00bdae']}
     >
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>

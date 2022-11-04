@@ -17,7 +17,7 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
       <Inject services={[AccumulationLegend, PieSeries, AccumulationDataLabel, AccumulationTooltip]} />
       <AccumulationSeriesCollectionDirective>
         <AccumulationSeriesDirective
-          name="Sale"
+          name="Ahorro"
           dataSource={data}
           xName="x"
           yName="y"
@@ -37,7 +37,8 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
               color: '#fff',
             },
           }}
-        />
+          palettes={['#357cd2', '#e56590', '#00bdae', '#e4966a']}
+          />
       </AccumulationSeriesCollectionDirective>
     </AccumulationChartComponent>
   );
